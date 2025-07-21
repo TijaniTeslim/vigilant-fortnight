@@ -537,6 +537,11 @@ textarea {
   outline: none;
   resize: none;
   color: #00abf0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.text-area {
+  position: relative;
 }
 .text-area span {
   position: relative;
@@ -719,9 +724,10 @@ footer {
     width: 100%;
   }
   .text-area span {
-    position: relative;
-    top: -210px;
-    left: 250px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.9em;
   }
   .input-field:valid,
   .input-field:focus {
@@ -734,8 +740,7 @@ footer {
 
 @media only screen and (max-width: 440px) {
   .text-area span {
-    position: relative;
-    top: -210px;
-    left: 210px;
+    top: 10px;
+    left: 10px;
   }
 }
